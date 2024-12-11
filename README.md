@@ -1,59 +1,216 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEDD CHEMISTRY</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+        /* Header */
+        header {
+            background: linear-gradient(to right, #4facfe, #904e95);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
 
-# GitHub Pages
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+            padding: 60px 20px;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+        .hero .cta {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s;
+        }
+        .hero .cta:hover {
+            background: #e64a19;
+        }
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+        /* Main Content */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .tab {
+            background: #4caf50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: transform 0.3s;
+        }
+        .tab:hover {
+            transform: scale(1.1);
+        }
 
-</header>
+        /* Videos & Notes Section */
+        .resources {
+            text-align: center;
+            padding: 20px;
+        }
+        .resource-item {
+            display: inline-block;
+            margin: 15px;
+            padding: 20px;
+            background: #ffc107;
+            color: #333;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .resource-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
 
-<!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
--->
+        /* Doubt-Solving Corner */
+        .doubt-corner {
+            background: #673ab7;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .doubt-corner h3 {
+            margin-bottom: 20px;
+        }
+        .doubt-corner a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background: #ff5722;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .doubt-corner a:hover {
+            background: #e64a19;
+        }
 
-## Step 2: Configure your site
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ZEDD CHEMISTRY</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#chemistry">Chemistry</a>
+            <a href="#biology">Biology</a>
+            <a href="#videos">Videos</a>
+            <a href="#notes">Notes</a>
+            <a href="#doubts">Doubt Corner</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-_You turned on GitHub Pages! :tada:_
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Master Chemistry & Biology from Basics to Expertise!</h2>
+        <a href="#chemistry" class="cta">Explore Chemistry</a>
+        <a href="#biology" class="cta">Dive into Biology</a>
+    </section>
 
-We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
+    <!-- Tabs Section -->
+    <section id="tabs" class="tabs">
+        <a href="#class10" class="tab">Class 10</a>
+        <a href="#class11" class="tab">Class 11</a>
+        <a href="#class12" class="tab">Class 12</a>
+        <a href="#bsc" class="tab">B.Sc.</a>
+        <a href="#msc" class="tab">M.Sc.</a>
+    </section>
 
-Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <h3>Video Lectures & Notes</h3>
+        <div class="resource-item">
+            <h4>Chemistry Videos</h4>
+            <a href="#">Watch Now</a>
+        </div>
+        <div class="resource-item">
+            <h4>Biology Videos</h4>
+            <a href="#">Watch Now</a>
+        </div>
+        <div class="resource-item">
+            <h4>Chemistry Notes</h4>
+            <a href="#">Download Notes</a>
+        </div>
+        <div class="resource-item">
+            <h4>Biology Notes</h4>
+            <a href="#">Download Notes</a>
+        </div>
+    </section>
 
-We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
+    <!-- Doubt Solving Corner -->
+    <section id="doubts" class="doubt-corner">
+        <h3>Have a Doubt? We're Here to Help!</h3>
+        <a href="#">Ask a Doubt</a>
+        <p>Join our live chat or post your question in the discussion forum.</p>
+    </section>
 
-### :keyboard: Activity: Configure your site
-
-1. Browse to the `_config.yml` file in the `my-pages` branch.
-1. In the upper right corner, open the file editor.
-1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
-   ```yml
-   theme: minima
-   ```
-1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
-1. Commit your changes.
-1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 ZEDD CHEMISTRY. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+</body>
+</html>
